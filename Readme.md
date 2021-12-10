@@ -40,7 +40,9 @@ Program runs on Linux and Mac OS, have not confirmed on Windows
 
 The features of this application will be:
 
--
+- Magic 8 ball custom option input,
+- Dice change to custom dice (6, 8, 12 sided)
+- Change color of text?
 
 ## User Interaction (Develop an outline of the user interaction and experience for the application)
 
