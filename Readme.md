@@ -6,4 +6,8 @@ This is my terminal application built with Ruby. It is a Chance game with three 
 
 I am creating this program as some times you just need an extra hand deciding something, or cant quite figure out what to do, so you need something to push you in the right direction. This is for people who like me are very indecisive and poor at making decisions, I hope to help people who would end up starving because they couldn't decide what to have for dinner. People will be able to download my application and use it when they are in need of a quick decision.
 
+## Features
 
+The features of this application will be:
+
+- 
