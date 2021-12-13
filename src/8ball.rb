@@ -17,6 +17,22 @@ print "What is your question? "
 question = gets.chomp.capitalize
 system "clear"
 
+puts "
+       ____
+    dP9CGG88@b
+  IP   _   Y888@@b
+ dIi  (_)   G8888@b
+dCII  (_)   G8888@@b
+GCCIi      GG8888@@@
+GGCCCCCCCGGG88888@@@
+GGGGCCCGGGG88888@@@@
+Y8GGGGGG8888888@@@@P
+ Y88888888888@@@@@P
+  Y8888888@@@@@@@P
+    @@@@@@@@@P
+"
+sleep (1)
+system "clear"
 if question == "What is the meaning of life"
     puts "#{question}? "
     puts "42"
