@@ -14,7 +14,7 @@ answers = ["It is certain", "It is decidedly so", "Without a doubt", "Yes, defin
 
 puts "Welcome to the Magic 8 Ball"
 print "What is your question? "
-question = gets.chomp.capitalize
+question = gets.chomp.capitalize.delete("?")
 system "clear"
 
 puts "
