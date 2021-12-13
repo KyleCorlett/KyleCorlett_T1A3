@@ -1,1 +1,10 @@
+require ""
+require ""
+require ""
+require ""
+require_relative "./app_pages/8ball.rb"
+require_relative "./app_pages/dice.rb"
+require_relative "./app_pages/coin_flip.rb"
 
+Puts "Welcome to the Chance Game!!"
+Puts "Select your option below using your Arrow Keys and Enter to select your option"
