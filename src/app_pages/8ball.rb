@@ -7,32 +7,39 @@ def magic_8_ball
         "Don't bet on it", "My reply is no", "My sources say no", "Outlook not so good",
         "Very doubtful"]
 
-    puts "Welcome to the Magic 8 Ball"
     print "What is your question? "
     question = gets.chomp.capitalize.delete("?")
-    system "clear"
+    if question != ""
+        system "clear"
 
-    puts "
-          ____
-        dP9CGG88@b
-     IP   _   Y888@@b
-    dIi  (_)   G8888@b
-    dCII  (_)   G8888@@b
-    GCCIi      GG8888@@@
-    GGCCCCCCCGGG88888@@@
-    GGGGCCCGGGG88888@@@@
-    Y8GGGGGG8888888@@@@P
-    Y88888888888@@@@@P
-    Y8888888@@@@@@@P
-        @@@@@@@@@P
-    "
-    sleep (1)
-    system "clear"
-    if question == "What is the meaning of life"
-        puts "#{question}? "
-        puts "42"
-    else 
-        puts "#{question}? "
-        puts "#{answers.sample}"
+        puts "
+            ____
+            dP9CGG88@b
+        IP   _   Y888@@b
+        dIi  (_)   G8888@b
+        dCII  (_)   G8888@@b
+        GCCIi      GG8888@@@
+        GGCCCCCCCGGG88888@@@
+        GGGGCCCGGGG88888@@@@
+        Y8GGGGGG8888888@@@@P
+        Y88888888888@@@@@P
+        Y8888888@@@@@@@P
+            @@@@@@@@@P
+        "
+        sleep (1)
+        system "clear"
+        if question == "What is the meaning of life"
+            puts "#{question}? "
+            puts "42"
+        else 
+            puts "#{question}? "
+            puts "#{answers.sample}"
+        end
+    else
+        raise
     end
+    rescue
+        system "clear"
+        print "You have to want to ask something? "
+        retry
 end
