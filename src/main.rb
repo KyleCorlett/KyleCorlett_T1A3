@@ -2,9 +2,22 @@ require_relative "./app_pages/8ball.rb"
 require_relative "./app_pages/dice.rb"
 require_relative "./app_pages/coin_flip.rb"
 
-puts "Welcome to the Chance Game!!"
-puts "Select your option below using your Arrow Keys and Enter to select your option"
+require "tty-prompt"
+require "pastel"
 
-coin_flip
-magic_8_ball
-dice_roll
+prompt = TTY::Prompt.new(active_color: :green)
+
+puts "Welcome to the Chance Game!!"
+choice = prompt.select("Select what game you would like to play:", %w(Magic8Ball CoinFlip RollTheDice))
+if choice == "Magic8Ball"
+    system "clear"
+    magic_8_ball
+elsif choice == "CoinFlip"
+    system "clear"
+    coin_flip
+elsif choice == "RollTheDice"
+    system "clear"
+    roll_the_dice
+end
+
+# prompt.keypress("Press space or enter to continue", keys: [:space, :return]) -- Possible for coin flip
