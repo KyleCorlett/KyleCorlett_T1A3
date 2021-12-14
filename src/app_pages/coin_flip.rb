@@ -1,7 +1,7 @@
 
 def coin_flip
     results = ["Heads", "Tails"]
-        print "To flip the coin hit the 'Enter' key"
+        print "To flip the coin hit the 'Enter' key: "
 
         enter = gets.chomp
 
