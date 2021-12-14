@@ -4,9 +4,13 @@ require_relative "./app_pages/coin_flip.rb"
 
 require "tty-prompt"
 require "pastel"
+require "tty-font"
 
-prompt = TTY::Prompt.new(active_color: :green)
+prompt = TTY::Prompt.new(active_color: :bright_magenta)
+pastel = Pastel.new
+font = TTY::Font.new(:doom)
 
+puts pastel.magenta(font.write("CHANCE!"))
 puts "Welcome to the Chance Game!!"
 
 choice = prompt.select("Select what game you would like to play:", ["Magic 8 Ball", "Coin Flip", "Roll The Dice"])
@@ -18,7 +22,7 @@ choice = prompt.select("Select what game you would like to play:", ["Magic 8 Bal
         coin_flip
     elsif choice == "Roll The Dice"
         system "clear"
-        roll_the_dice
+        dice_roll
     end
 
 # prompt.keypress("Press space or enter to continue", keys: [:space, :return]) -- Possible for coin flip
