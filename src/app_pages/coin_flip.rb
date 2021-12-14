@@ -13,11 +13,9 @@ def coin_flip
         else
             raise StandardError
         end
-
+        
         rescue StandardError
             system "clear"
             print "Please retry: "
             retry
 end
-
-coin_flip

@@ -1,9 +1,3 @@
-require "tty-progressbar"
-require "pastel"
-
-pastel = Pastel.new
-green  = pastel.on_green(" ")
-red    = pastel.on_red(" ")
 
 def magic_8_ball
     answers = ["It is certain", "It is decidedly so", "Without a doubt", "Yes, definitely",
@@ -12,7 +6,7 @@ def magic_8_ball
         "Better not tell you now", "Cannot predict now", "Concentrate and ask again",
         "Don't bet on it", "My reply is no", "My sources say no", "Outlook not so good",
         "Very doubtful"]
-        
+
     puts "Welcome to the Magic 8 Ball"
     print "What is your question? "
     question = gets.chomp.capitalize.delete("?")
@@ -42,5 +36,3 @@ def magic_8_ball
         puts "#{answers.sample}"
     end
 end
-
-magic_8_ball
