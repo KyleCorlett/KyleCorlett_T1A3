@@ -19,9 +19,9 @@ class magic_8_ball
     system "clear"
 
     puts "
-        ____
+          ____
         dP9CGG88@b
-    IP   _   Y888@@b
+     IP   _   Y888@@b
     dIi  (_)   G8888@b
     dCII  (_)   G8888@@b
     GCCIi      GG8888@@@

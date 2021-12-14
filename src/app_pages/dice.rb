@@ -1,22 +1,22 @@
-dice = [1, 2, 3, 4, 5, 6]
 
-class dice_roll
-    begin
-        print "To roll the dice please type 'Lucky' "
+def dice_roll
+    dice = [1, 2, 3, 4, 5, 6]
+    print "To roll the dice please type Lucky: "
         
-        roll = gets.chomp.capitalize
+    roll = gets.chomp.capitalize
 
-        system "clear"
+    # system "clear"
 
-        if roll == "Lucky"
-            puts dice.sample
-        else
-            raise StandardError
-        end
-        
-        rescue StandardError
-            system "clear"
-            print "Please retry: "
-            retry
+    if roll == "Lucky"
+        puts dice.sample
+    else
+        raise
     end
+
+    rescue
+        print "Please retry: "
+        retry
 end
+
+puts "Welcome"
+dice_roll
