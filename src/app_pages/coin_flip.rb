@@ -1,7 +1,6 @@
-results = ["Heads", "Tails"]
 
-class coin_flip
-    begin
+def coin_flip
+    results = ["Heads", "Tails"]
         print "To flip the coin hit the 'Enter' key"
 
         enter = gets.chomp
@@ -9,6 +8,7 @@ class coin_flip
         system "clear"
 
         if enter == ""
+            puts "Your result is: "
             puts results.sample
         else
             raise StandardError
@@ -18,5 +18,6 @@ class coin_flip
             system "clear"
             print "Please retry: "
             retry
-    end
 end
+
+coin_flip

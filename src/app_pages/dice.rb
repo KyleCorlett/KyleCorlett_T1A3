@@ -8,6 +8,7 @@ def dice_roll
     # system "clear"
 
     if roll == "Lucky"
+        puts "Your result is: "
         puts dice.sample
     else
         raise
