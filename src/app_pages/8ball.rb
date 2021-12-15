@@ -29,11 +29,15 @@ def magic_8_ball
         sleep (1)
         system "clear"
         if question == "What is the meaning of life"
-            puts "#{question}? "
+            print "#{question}? "
             puts "42"
+            puts "'Press any key to continue'"
+            STDIN.getch
         else 
-            puts "#{question}? "
+            print "#{question}? "
             puts "#{answers.sample}"
+            puts "'Press any key to continue'"
+            STDIN.getch
         end
     else
         raise

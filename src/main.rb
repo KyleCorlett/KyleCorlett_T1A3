@@ -10,19 +10,38 @@ prompt = TTY::Prompt.new(active_color: :bright_magenta)
 pastel = Pastel.new
 font = TTY::Font.new(:doom)
 
-puts pastel.magenta(font.write("CHANCE!"))
-puts "Welcome to the Chance Game!!"
+while true
 
-choice = prompt.select("Select what game you would like to play:", ["Magic 8 Ball", "Coin Flip", "Roll The Dice"])
-    if choice == "Magic 8 Ball"
-        system "clear"
-        magic_8_ball
-    elsif choice == "Coin Flip"
+    system "clear"
+    puts pastel.magenta(font.write("CHANCE!"))
+    puts "Welcome to the Chance Game!!"
+
+    choice = prompt.select("Select what game you would like to play:", ["Magic 8 Ball", "Coin Flip", "Roll The Dice"])
+
+    case
+
+    when choice == "Magic 8 Ball"
+
+        puts pastel.magenta(font.write("Magic 8 Ball"))
+        puts "Welcome to the Magic 8 Ball Game"
+        puts ""
+        enter = prompt.select("Would you like to ask a qustion? ", ["Yes", "No"])
+
+        if enter == "Yes"
+            system "clear"
+            magic_8_ball
+        elsif enter == "No"
+
+        end
+            
+    when choice == "Coin Flip"
         system "clear"
         coin_flip
-    elsif choice == "Roll The Dice"
+        return
+
+    when choice == "Roll The Dice"
         system "clear"
         dice_roll
-    end
-
-# prompt.keypress("Press space or enter to continue", keys: [:space, :return]) -- Possible for coin flip
+        return
+end
+end

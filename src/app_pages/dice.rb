@@ -1,6 +1,6 @@
 require "tty-box"
 
-    def dice_roll
+def dice_roll
 
     one = TTY::Box.frame " • ", title: {top_left: "1"}, align: :center, padding: [1,2,1,2]
     two = TTY::Box.frame "• •", title: {top_left: "2"}, align: :center, padding: [1,2,1,2]
