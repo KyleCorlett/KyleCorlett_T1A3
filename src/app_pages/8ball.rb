@@ -44,6 +44,6 @@ def magic_8_ball
     end
     rescue
         system "clear"
-        print "You have to want to ask something? "
+        print "You want to ask something? "
         retry
 end
