@@ -45,6 +45,7 @@ while true
     when choice == "Coin Flip"
         system "clear"
         puts pastel.magenta(font.write("Coin Flip"))
+        
         results = ["Heads", "Tails"]
         print "To flip the coin hit the 'Enter' key: "
 
