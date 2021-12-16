@@ -21,7 +21,7 @@ while true
     if ARGV.size == 0
         puts "Welcome to the Chance Game!!"
     else 
-        puts "Hello #{user_name}, Welcome to the Chance Game!!"
+        puts "Hello #{user_name.capitalize}, Welcome to the Chance Game!!"
     end
 
     choice = prompt.select("Select what game you would like to play:", ["Magic 8 Ball", "Coin Flip", "Roll The Dice", "Exit"])
@@ -52,6 +52,7 @@ while true
         system "clear"
         puts pastel.magenta(font.write("Roll The Dice"))
         dice_roll
+
     when choice == "Exit"
         system "clear"
         return
