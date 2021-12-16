@@ -78,4 +78,10 @@ I used trello to keep track of my requirements and put little messages when I up
 
 I also used a spreadsheet to give me estimated times to complete tasks.
 
-![image]()
+![image](./docs/implementation_plan.png)
+
+## Testing
+
+### Manual test sheet
+
+![image](./docs/Manual_tests.png)
