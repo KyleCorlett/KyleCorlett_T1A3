@@ -44,15 +44,15 @@ Program runs on Linux and Mac OS, have not confirmed on Windows
 
 ## Features (Develop a list of features that will be included in the application)
 
-### The features of this application will be
+### The features of this application
 
-- Magic 8 ball custom option input,
-- Dice change to custom dice (6, 8, 12 sided)
+- The Magic 8 Ball game
+- Dice change to custom dice
 - Change color of text?
 
 ## User Interaction (Develop an outline of the user interaction and experience for the application)
 
-Users when the load the Chance.sh file will be run through the installation set up, and asked to enter their name. The name will be in a loop incase they enter nothing then it will just keep retuning to the input with a message saying "Please try again and enter your name". Once the user has entered a name it will load the program, they will be greeted with a title, a greeting with their name and the game options in a list format (Magic 8 ball, Roll the dice, Coin flip). They will be able to use the up and down arrows to move between options and then use enter to select which option they are currently on, which will have a little statement above the options telling them how to navigate.
+Users when the load the Chance.sh file will be run through the installation set up, and asked to enter their name. Once the bash script has the name, it stores it in an array. The main ruby code then receives that array, if the array is empty it will display a set message saying "Welcome to the Chance Game!!, if the array has any value in it. Once the user has entered a name it will load the program, they will be greeted with a title, a greeting with their name and the game options in a list format (Magic 8 ball, Roll the dice, Coin flip, Exit). They will be able to use the up and down arrows to move between options and then use enter to select which option they are currently on, which will have a little statement above the options telling them how to navigate.
 
 If they select the Magic 8 Ball option they will be greeted with a graphical image of an 8 Ball, and a line that says "What question do you have for the Magic 8 Ball today?" followed by a space to input their question. Once the user has inputted their question, which can be anything, or any value, it will run the random generator program and select a random answer from a set of pre defined answers. It will the display that answer after it displays the original question. it will then repeat until they respond "exit"
 

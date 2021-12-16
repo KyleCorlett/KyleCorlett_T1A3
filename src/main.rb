@@ -1,6 +1,5 @@
 require_relative "./app_pages/8ball.rb"
 require_relative "./app_pages/dice.rb"
-require_relative "./app_pages/coin_flip.rb"
 
 require "tty-prompt"
 require "pastel"
@@ -45,7 +44,7 @@ while true
     when choice == "Coin Flip"
         system "clear"
         puts pastel.magenta(font.write("Coin Flip"))
-        
+
         results = ["Heads", "Tails"]
         print "To flip the coin hit the 'Enter' key: "
 
