@@ -11,17 +11,19 @@ font = TTY::Font.new(:doom)
 
 user_name = ARGV[0]
 
+
 while true
 
     system "clear"
     puts pastel.magenta(font.write("CHANCE!"))
-    # puts "Hello #{user_name}, Welcome to the Chance Game!!"
     
     if ARGV.size == 0
         puts "Welcome to the Chance Game!!"
     else 
         puts "Hello #{user_name.capitalize}, Welcome to the Chance Game!!"
     end
+    
+    ARGV.clear
 
     choice = prompt.select("Select what game you would like to play:", ["Magic 8 Ball", "Coin Flip", "Roll The Dice", "Exit"])
 
@@ -29,16 +31,15 @@ while true
 
     when choice == "Magic 8 Ball"
 
+        system "clear"
+        puts pastel.magenta(font.write("Magic 8 Ball"))
         puts "Welcome to the Magic 8 Ball Game"
-        puts ""
         enter = prompt.select("Would you like to ask a qustion? ", ["Yes", "No"])
 
 
         if enter == "Yes"
             system "clear"
-            puts pastel.magenta(font.write("Magic 8 Ball"))
             magic_8_ball
-        elsif enter == "No"
         end
             
     when choice == "Coin Flip"
@@ -65,5 +66,5 @@ while true
     when choice == "Exit"
         system "clear"
         return
-end
+    end
 end

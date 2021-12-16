@@ -1,5 +1,8 @@
+require "pastel"
+require "tty-font"
 
 def magic_8_ball
+
     answers = ["It is certain", "It is decidedly so", "Without a doubt", "Yes, definitely",
         "You may rely on it", "As I see it, yes", "Most likely", "Outlook good",
         "Signs point to yes", "Yes", "Reply hazy, try again", "Ask again later",
@@ -9,6 +12,7 @@ def magic_8_ball
 
     print "What is your question? "
     question = gets.chomp.capitalize.delete("?")
+    
     if question != ""
         system "clear"
 
@@ -42,8 +46,10 @@ def magic_8_ball
     else
         raise
     end
+
     rescue
         system "clear"
         print "You want to ask something? "
         retry
+    return
 end
