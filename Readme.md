@@ -5,7 +5,13 @@
 
 ## Description
 
-This is my terminal application built with Ruby. It is a Chance game with three options to use. These options will be a Magic 8 Ball, where the application gives you a space to write an answer, after you have entered in your text it runs a random number generator, then pulls the matching answer from a hash and displays the answer after and along side the question the user has inputted. The second option will be to roll a dice, the user will select roll the dice of the menu and the application will use a random number generator to generate a number between 1 and 6 and display it to the user. The last and final option will be a simple coin flip, where the user will select to flip the coin and the application will use a random number generator and match that number to a heads or tails in a hash and display it to the user. There will be a main menu where the user has the option to go into each little game, and then a sub menu for each game, with its own set of options and a way to get back to the main menu.
+This is my terminal application built with Ruby. It is a Chance game with three options to use. These options will be a Magic 8 Ball, where the application gives you a space to write an answer, after you have entered in your text it pulls a random answer from the stored array and displays the answer after and along side the question the user has inputted, if the user ask the question "Whats the meaning of life?" it will answer "42".
+
+The second option will be to roll a dice, the user will select roll the dice of the menu and the application will ask the user to enter the key word "Lucky" and then it will pull a random value from a stored array and match it to variables with values and text images between 1 and 6 and display it to the user. 
+
+The last and final option will be a simple coin flip, where the user will select to flip the coin and the application will use pull a random value from a stored array that store a heads or tails value and will display the random value to the user.
+
+After each game has completed it will bring the user automatically back to the main menu where they have the option to exit the program completely.
 
 I am creating this program as some times you just need an extra hand deciding something, or cant quite figure out what to do, so you need something to push you in the right direction. This is for people who like me are very indecisive and poor at making decisions, I hope to help people who would end up starving because they couldn't decide what to have for dinner. People will be able to download my application and use it when they are in need of a quick decision.
 
@@ -13,7 +19,7 @@ I am creating this program as some times you just need an extra hand deciding so
 
 To install the application you must follow these steps.
 
-Method one:
+### Method one
 
 - Install ruby to your computer, follow this link for instructions (<https://www.ruby-lang.org/en/documentation/installation/>)
 - Go to the GitHub repo linked up the top or (<https://github.com/KyleCorlett/KyleCorlett_T1A3.git>)
@@ -23,7 +29,7 @@ Method one:
 - Enter your name when prompted
 - The application will now run
 
-Method Two:
+### Method Two
 
 - Install ruby to your computer, follow this link for instructions (<https://www.ruby-lang.org/en/documentation/installation/>)
 - Go to the GitHub repo linked up the top or (<https://github.com/KyleCorlett/KyleCorlett_T1A3.git>)
@@ -38,7 +44,7 @@ Program runs on Linux and Mac OS, have not confirmed on Windows
 
 ## Features (Develop a list of features that will be included in the application)
 
-The features of this application will be:
+### The features of this application will be
 
 - Magic 8 ball custom option input,
 - Dice change to custom dice (6, 8, 12 sided)
