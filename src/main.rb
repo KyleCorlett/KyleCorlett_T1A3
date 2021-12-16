@@ -4,6 +4,7 @@ require_relative "./app_pages/dice.rb"
 require "tty-prompt"
 require "pastel"
 require "tty-font"
+require "tty-box"
 
 prompt = TTY::Prompt.new(active_color: :bright_magenta)
 pastel = Pastel.new
@@ -22,7 +23,7 @@ while true
     else 
         puts "Hello #{user_name.capitalize}, Welcome to the Chance Game!!"
     end
-    
+
     ARGV.clear
 
     choice = prompt.select("Select what game you would like to play:", ["Magic 8 Ball", "Coin Flip", "Roll The Dice", "Exit"])
