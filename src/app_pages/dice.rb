@@ -19,6 +19,8 @@ def dice_roll
     if roll == "Lucky"
         puts "Your result is: "
         puts dice.sample
+        puts "'Press any key to continue'"
+        STDIN.getch
     else
         raise
     end

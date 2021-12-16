@@ -8,8 +8,10 @@ def coin_flip
         system "clear"
 
         if enter == ""
-            puts "Your result is: "
+            print "Your result is: "
             puts results.sample
+            puts "'Press any key to continue'"
+            STDIN.getch
         else
             raise StandardError
         end
