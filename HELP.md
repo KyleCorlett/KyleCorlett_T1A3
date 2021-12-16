@@ -2,7 +2,7 @@
 
 To install the application you must follow these steps.
 
-### Method one
+## Method one
 
 - Install ruby to your computer, follow this link for instructions (<https://www.ruby-lang.org/en/documentation/installation/>)
 - Go to the GitHub repo linked up the top or (<https://github.com/KyleCorlett/KyleCorlett_T1A3.git>)
@@ -12,7 +12,7 @@ To install the application you must follow these steps.
 - Enter your name when prompted
 - The application will now run
 
-### Method Two
+## Method Two
 
 - Install ruby to your computer, follow this link for instructions (<https://www.ruby-lang.org/en/documentation/installation/>)
 - Go to the GitHub repo linked up the top or (<https://github.com/KyleCorlett/KyleCorlett_T1A3.git>)

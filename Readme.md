@@ -60,9 +60,22 @@ If they select the Roll The Dice option it will display a graphical title of "Ro
 
 If they select Coin Flip it will display a graphical title of "Coin Flip", it will give them a command to hit 'Enter" to flip the coin. When they hit 'Enter' it will run the flip the coin the program, and pull a random value from a stored array. The program will the display "Heads" or "Tails", and then exit to the main menu. There is no error handling on this as the user can hit any key and it will run.
 
+## Develop a diagram which describes the control flow of your application
+
+![image](./docs/Flow_Chart.jpeg)
+
 ## Implementation Plan
 
-I used trello to keep track of my requirements and put little messages when I updated my code, or completed a task. Here are some screen shots, the rest are stored in ./docs/Screen_shots_dated
+### Trello
 
-![Trello_shot_1](docs/Trello Screen_shots_dated/Screen_Shot_2021-12-10_at_9.04.20_am.png)
+I used trello to keep track of my requirements and put little messages when I updated my code, or completed a task. Here are some screen shots, the rest are stored in ./docs/Screen_shots_dated.
 
+![image](./docs/Trello_Screen_shots_dated/Screen_Shot_2021-12-10_at_9.04.20_am.png)
+![image](./docs/Trello_Screen_shots_dated/Screen_Shot_2021-12-13_at_12.10.59_pm.png)
+![image](./docs/Trello_Screen_shots_dated/Screen_Shot_2021-12-16_at_11.28.42_am.png)
+
+### Spreadsheet
+
+I also used a spreadsheet to give me estimated times to complete tasks.
+
+![image]()
