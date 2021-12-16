@@ -14,7 +14,7 @@ def dice_roll
         
     roll = gets.chomp.capitalize
 
-    system "clear"
+    # system "clear"
 
     if roll == "Lucky"
         puts "Your result is: "
@@ -29,4 +29,5 @@ def dice_roll
         system "clear"
         print "Please retry: "
         retry
+    return
 end

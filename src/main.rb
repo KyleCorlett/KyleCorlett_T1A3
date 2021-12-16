@@ -45,14 +45,23 @@ while true
     when choice == "Coin Flip"
         system "clear"
         puts pastel.magenta(font.write("Coin Flip"))
-        coin_flip
-        return
+        results = ["Heads", "Tails"]
+        print "To flip the coin hit the 'Enter' key: "
+
+        STDIN.getch
+
+        system "clear"
+
+        puts pastel.magenta(font.write("Coin Flip"))
+        print "Your result is: "
+        puts results.sample
+        puts "'Press any key to continue'"
+        STDIN.getch
 
     when choice == "Roll The Dice"
         system "clear"
         puts pastel.magenta(font.write("Roll The Dice"))
         dice_roll
-
     when choice == "Exit"
         system "clear"
         return
