@@ -40,15 +40,15 @@ To install the application you must follow these steps.
 - In your terminal run ruby main.rb NAME (Insert your name where NAME is)
 - The application will now run
 
-Program runs on Linux and Mac OS, have not confirmed on Windows
+Program runs on Linux and Mac OS, have not confirmed on Windows, built with ruby 3.0.0
 
 ## Features (Develop a list of features that will be included in the application)
 
 ### The features of this application
 
-- The Magic 8 Ball game, question 42, no entry
-- Dice game, pre defined variables and radom array matching to variables
-- user name entry on bash script and error handling.
+- The Magic 8 Ball game, has a prompt to make sure you want to enter the method using tty prompt and a loop to verify your selection. I then has a hidden feature using a loop to provide the user with a specific answer when the question "What is the meaning on life?". There is a rescue for error handling if the user enters no information when they ask a question.
+- The roll the dice uses an array with external variables to provide the user a random variable during the games use. To start the roll of the dice the user is required to type "Lucky", there is an auto capitalize function to help if the user doesn't type a capital it will still recognize the word. If the user enters the wrong information it will provide an error and allow the user to retry using a rescue.
+- There is a feature when you first launch the application in the bash script to enter your name, it then stores that name in an array. The main ruby script then pulls that information from the array in the bash script and converts it to a variable I can use to give the user a custom greeting. If the user does not enter anything for a name, it has a different greeting that is not personal and just generic.
 
 ## User Interaction (Develop an outline of the user interaction and experience for the application)
 
@@ -73,6 +73,7 @@ I used trello to keep track of my requirements and put little messages when I up
 ![image](./docs/Trello_Screen_shots_dated/Screen_Shot_2021-12-10_at_9.04.20_am.png)
 ![image](./docs/Trello_Screen_shots_dated/Screen_Shot_2021-12-13_at_12.10.59_pm.png)
 ![image](./docs/Trello_Screen_shots_dated/Screen_Shot_2021-12-16_at_11.28.42_am.png)
+![image](./docs/Trello_Screen_shots_dated/Screen_Shot_2021-12-17_at_3.33.55_pm.png)
 
 ### Spreadsheet
 
